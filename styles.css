@@ -1,0 +1,307 @@
+body {
+  font-family: "Lato", sans-serif;  
+  background-color: #000000;
+  margin: 0px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-color: floralwhite;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 20px;
+  background-color: black;
+  
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 40px;
+}
+
+.container-magazine {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 40px;
+}
+
+.container-graphics {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 40px;
+}
+
+
+.brand {
+  color: aliceblue;
+  font-weight: bolder;
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 50px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+  margin-bottom: 20px;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid white;
+}
+
+.active-nav-link a {
+  color: white !important;
+}
+
+.nav-link-wrapper a {
+  color: #c8ff00;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid yellow;
+}
+
+.nav-link-wrapper a:hover {
+  color: yellow;
+}
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 15px;
+}
+
+.cell-row1 { 
+  grid-row: 1; 
+  grid-column: 1/5;
+}
+
+.cell-row2 { 
+  grid-row: 4; 
+  grid-column: 1/5;
+}
+
+.portfolio-main-header {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  text-align: center;
+  margin: 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+.portfolio-header {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+  border-radius: 10%;
+  border: 5px solid #555555
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  color: transparent;
+}
+
+.image-blur {
+  transition: 1s;
+  filter: brightness(40%) sepia(100%);
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  color: red;
+  background-color: red;
+  opacity: .9;
+  border-radius: 10%;
+}
+
+.img-text-wrapper:hover .subtitle {
+  color:whitesmoke;
+  font-weight: 200;
+}
+
+.logo-wrapper img {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.logo-wrapper-magazine img {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.logo-wrapper-magazine-nbmbaa img {
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+
+.profile-image-wrapper img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.profile-content-wrapper {
+  padding: 20px;
+}
+
+h1 {
+  color: antiquewhite;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.footer-container {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+  height: 200px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 25px;
+  margin-top: 40px;
+  color: white;
+  background-color: #404040;
+  border-radius: 25px;
+}
+
+
+
+.title--classic {
+  font-family: "Cookie", sans-serif;
+  color: orange;
+  margin-bottom: 10px;
+  ;
+}
+
+
+.container_intro {
+  color: #ffffff;
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+/* About CC Style */
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+}
+
+.profile-content-wrapper {
+  color: whitesmoke;
+  padding: 30px;
+}
+
+
+.about_container {
+  background-color: black;
+  margin: 10px;
+}
+
+.about_me_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+
+/* BLOCKQUTE Information */
+.blockquote-container {
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-left: 200px;
+  margin-bottom: 70px;
+}
+
+.blockquote {
+
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+.blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.blockquote h1 {
+  display: inline;
+  font-size: 60px;
+}
+
+
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.contact_us p {
+  color: white;
+  text-align: center;
+}
+
+.contact_us img {
+  width: 40%;
+}
+
+/* Logo Style */
